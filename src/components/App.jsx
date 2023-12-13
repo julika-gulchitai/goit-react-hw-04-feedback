@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FeedbackOptions } from './Feedback/FeedbackOptions';
 import { Statistics } from './Statistics/Statistics';
 import { Notification } from './Notification/Notification';
@@ -11,8 +11,21 @@ export const App = () => {
   const [bad, setBad] = useState(0);
 
   const handleClick = event => {
-    const buttonName = event.target.name.toLowerCase();
-    useState = { [buttonName]: [buttonName] + 1 };
+    const buttonName = event.target.name;
+    switch (buttonName) {
+      case 'Good':
+        setGood(prev => prev + 1);
+        break;
+      case 'Neutral':
+        setNeutral(prev => prev + 1);
+        break;
+      case 'Bad':
+        setBad(prev => prev + 1);
+        break;
+      default:
+        break;
+    }
+    // useState = { [buttonName]: [buttonName] + 1 };
   };
 
   const countTotalFeedback = () => {
