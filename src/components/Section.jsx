@@ -1,4 +1,3 @@
-import React from 'react';
 import { TitleStyled } from './Feedback/Feedback.styled';
 
 export const Section = ({ title, children }) => {

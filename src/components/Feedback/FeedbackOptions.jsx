@@ -1,4 +1,3 @@
-import React from 'react';
 import { ButtonContainer, StyledButton } from './Feedback.styled';
 
 export const FeedbackOptions = ({ options, leaveFeedback }) => {

@@ -1,5 +1,4 @@
 import { StyledCounter } from 'components/Feedback/Feedback.styled';
-import React from 'react';
 
 export const Statistics = ({good, neutral, bad, total, positivePercentage}) => {
   return (
