@@ -25,7 +25,6 @@ export const App = () => {
       default:
         break;
     }
-    // useState = { [buttonName]: [buttonName] + 1 };
   };
 
   const countTotalFeedback = () => {
@@ -50,7 +49,6 @@ export const App = () => {
               neutral={neutral}
               bad={bad}
               total={total}
-              // countTotalFeedback={this.countTotalFeedback()}
               positivePercentage={positivePercentage}
             />
           ) : (
